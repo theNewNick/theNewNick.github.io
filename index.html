@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Intro -->
+        <div id="intro" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100vh; background: linear-gradient(to right, #2c3e50, #4ca1af); position: relative;">
+            <div>
+                <h1 style="margin: 0; font-size: 3em; color: white;">NICHOLAS SAVIGNANO<br />
+                    <span style="display: block;">PORTFOLIO</span>
+                </h1>
+                <!-- Fading Box for Financial Analyst -->
+                <span class="logo">Financial Analyst</span>
+                <p style="font-style: italic; color: #f0f0f0; margin-top: 20px;">
+                    Delivers actionable insights and drives strategic growth through expert financial analysis<br />
+                    and data-driven decision-making.
+                </p>
+                <ul class="actions" style="justify-content: center; margin-top: 80px;">
+                    <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Original Menu Button -->
+            <a href="#" class="menu-button" style="position: absolute; top: 20px; right: 20px; font-size: 1.5em; color: white; text-decoration: none;" onclick="toggleMenu()">☰ Menu</a>
+
+            <!-- Slide-in Menu -->
+            <div id="menu" style="position: fixed; top: 0; right: -300px; width: 300px; height: 100%; background-color: white; box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); transition: right 0.3s ease;">
+                <!-- Close (X) Button -->
+                <a href="#" style="position: absolute; top: 10px; right: 10px; font-size: 1.5em; color: grey; text-decoration: none;" onclick="toggleMenu()">&#10005;</a> <!-- X button -->
+
+                <ul style="list-style: none; padding: 20px; margin: 50px 0 0 0;">
+                    <li><a href="#" style="color: black; text-decoration: none; font-size: 1.2em;" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="assets/Resume.LPL.pdf" download style="color: black; text-decoration: none; font-size: 1.2em;">Resume</a></li>
+                    <li><a href="assets/CoverLetter.pdf" download style="color: black; text-decoration: none; font-size: 1.2em;">Cover Letter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript to toggle the slide-in menu -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.right === "-300px") {
+                    menu.style.right = "0";
+                } else {
+                    menu.style.right = "-300px";
+                }
+            }
+
+            // Fading animation for Financial Analyst logo
+            window.onload = function() {
+                document.querySelector('.logo').classList.add('fade-out');
+            };
+        </script>
+
+        <!-- Add the CSS for fading effect -->
+        <style>
+            .logo {
+                font-size: 1.5em;
+                color: #f0f0f0;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                border-radius: 5px;
+                opacity: 1;
+                transition: opacity 3s ease-out;
+            }
+
+            .logo.fade-out {
+                opacity: 0;
+            }
+        </style>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.kaggle.com/nicksav12345" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                <li><a href="https://www.linkedin.com/in/nicholas-savignano-745896118" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/theNewNick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">SKILLSET<br />HIGHLIGHTS</a></h2>
+                </header>
+
+                <!-- Container for centering content on the left -->
+                <div style="text-align: left; margin-left: auto; margin-right: auto; max-width: 800px;">
+                    <h3>Financial Modeling and Analysis</h3>
+                    <ul>
+                        <li>Advanced expertise in DCF, LBO, M&A, and sensitivity/scenario analysis.</li>
+                        <li>Skilled in valuation techniques, including comparable company analysis (Comps), precedent transactions, and discounted cash flow modeling.</li>
+                        <li>Proficient in financial forecasting, creating detailed projections for balance sheets, income statements, and cash flows.</li>
+                        <li>Experienced in capital budgeting, evaluating investment opportunities using NPV, IRR, and payback period methods.</li>
+                        <li>Strong knowledge of financial reporting standards, including GAAP and IFRS, with expertise in analyzing and interpreting financial statements.</li>
+                    </ul>
+
+                    <h3>Technical and Analytical Skills</h3>
+                    <ul>
+                        <li>Advanced proficiency in Excel-based projections, automating reports, and creating dynamic financial models.</li>
+                        <li>Proficient in Python, SQL Server, R, and JMP for data cleaning, normalization, exploratory data analysis (EDA), and predictive modeling.</li>
+                        <li>Expertise in building and optimizing machine learning models, implementing Retrieval-Augmented Generation (RAG) for LLMs.</li>
+                        <li>Skilled in cloud-based technologies, including Azure Management & Security Solutions.</li>
+                    </ul>
+
+                    <h3>Leadership and Communication</h3>
+                    <ul>
+                        <li>Strong interpersonal and communication skills, with a proven track record of leading high-performing teams and cross-functional collaborations.</li>
+                        <li>Experienced in designing and delivering impactful sales and strategy presentations to senior management.</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="image main">
+                    <img src="images/iStock-1145882183-900x550.jpg" alt="Financial Chart" style="max-width: 100%; max-height: 300px; margin-bottom: 20px;">
+                </a>
+                <ul class="actions special">
+                    <li><a href="#" class="button large">My Projects</a></li>
+                </ul>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <!-- First Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2023</span>
+                        <h2><a href="#">NestEgg<br />Financial Management Application</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-09-11 042446.png" alt="NestEgg Project Image" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led the development of a financial management app called NestEgg, designed to empower users with automated tools for savings, investment tracking, and goal setting. The app integrates three core components: real-time expense tracking for improved budgeting precision, advanced analytics for tailored financial insights, and a robust investment portfolio management system for informed decision-making. By leveraging cutting-edge data analysis and user-centric design, the app simplifies personal finance, helping users achieve their goals with greater efficiency. NestEgg’s innovative approach redefines financial management, providing a seamless, data-driven experience that addresses key pain points for modern users.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Second Project -->
+                <article>
+                    <header>
+                        <span class="date">October, 2024</span>
+                        <h2><a href="#">A Generative AI Solution<br />For Automated<br />Finance</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-11-22 161051.png" alt="Generative AI Solution Image" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led the development of an end-to-end, web-based workflow leveraging generative AI to revolutionize financial analysis for retail investors. This innovative system integrates three key components: a financial tool for automated buy/hold/sell recommendations, a retrieval-augmented generation (RAG) system for interactive document querying, and a financial modeling assistant powered by agentic agents for dynamic scenario analysis. Together, these tools address the inefficiencies of traditional research methods, offering scalable, cost-effective, and real-time decision-making capabilities. The workflow has demonstrated significant improvements in accuracy and efficiency, setting a new standard for investor-focused financial technology.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Third Project -->
+                <article>
+                    <header>
+                        <span class="date">December, 2023</span>
+                        <h2><a href="#">Machine Learning<br />Credit Card Approval</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-09-11 043300.png" alt="Machine Learning Credit Card Approval Image" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Developed a machine learning model to predict credit card approval, addressing financial exclusion for underserved populations without relying on traditional credit scores. Leveraged a dataset of over 1.4 million records to implement feature engineering, handle class imbalance, and train models like Random Forests and XGBoost. Emphasized transparency by creating interpretable outcomes, ensuring fairness and improving access to financial systems. Evaluated performance using precision, recall, and cross-validation, demonstrating the model’s effectiveness in expanding economic inclusion.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Fourth Project -->
+                <article>
+                    <header>
+                        <span class="date">November, 2023</span>
+                        <h2><a href="#">Bloomberg Global<br />Trading Challenge</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/31Ja06sm51L.png" alt="Bloomberg Trading Challenge Image" style="max-width: 100%; max-height: 255px;"></a>
+                    <p>
+                        Ranked in the top 50 nationwide in the Bloomberg Global Trading Challenge, showcasing expertise in portfolio management and strategic financial decision-making. This achievement was the result of consistently monitoring global financial markets, conducting detailed stock and industry analyses, and executing real-time trades with precision. Additionally, I developed complex financial models to forecast market trends and optimize portfolio performance, demonstrating advanced analytical and trading skills in a highly competitive environment.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Fifth Project -->
+                <article>
+                    <header>
+                        <span class="date">April, 2024</span>
+                        <h2><a href="#">Harvard Case Competition<br />Global Case Challenge</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-09-11 043822.png" alt="Harvard Case Competition Image" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led a team in the Harvard Global Case Competition, tackling a complex acquisition case for IBM and Equinix. We conducted in-depth market research, financial modeling, and valuation analysis to assess feasibility and strategic fit. Our comprehensive strategy addressed synergies, risks, and post-merger integration. Invited to the final ceremony, our solution was recognized for its strategic depth, innovative approach, and rigorous analysis.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Sixth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Hartford Healthcare<br />Website Optimization</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-11-22 162049.png" alt="Hartford Healthcare Website Optimization" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led the analysis and optimization of Hartford HealthCare’s website to enhance user engagement and improve patient experience. I spearheaded efforts to segment users, identify high-interest health topics, and propose actionable improvements, such as streamlining navigation, enhancing call-to-actions, and restructuring content hierarchy. The project combined advanced data analysis with strategic insights to create a more efficient and patient-focused digital experience.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Seventh Project -->
+                <article>
+                    <header>
+                        <span class="date">Novemeber, 2024</span>
+                        <h2><a href="#">Travelers<br />Modeling Case Competition</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/travelers-logo.jpg" alt="Hartford Healthcare Website Optimization" style="max-width: 100%; max-height: 265px;"></a>
+                    <p>
+                        As part of a case competition, I led the development of a predictive model aimed at optimizing call center resource allocation. Using XGBoost, we focused on identifying high-priority callers based on behavioral and interaction data. Through hyperparameter tuning and threshold optimization, we improved the model's recall by over 5%, ensuring higher accuracy in identifying high-value interactions, even at the cost of a slightly increased false positive rate. This allowed the call center to proactively engage with more customers, optimizing both resource allocation and customer satisfaction. Our final model outperformed the baseline in terms of precision, recall, and F1 score, delivering measurable improvements in operational efficiency and customer engagement.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Eighth Project -->
+                <article>
+                    <header>
+                        <span class="date">September, 2023</span>
+                        <h2><a href="#">Early Breast Cancer<br />Detection</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/dividing-breast-cancer-cell-article-only.jpg" alt="Hartford Healthcare Website Optimization" style="max-width: 100%; max-height: 320px;"></a>
+                    <p>
+                        Developed a predictive modeling solution to classify breast cancer as malignant or benign using a diagnostic dataset of 569 patient records. The project involved extensive data preprocessing, feature engineering, and the implementation of advanced machine learning models, including Logistic Regression, Decision Trees, Bootstrap Forests, and Neural Networks. Leveraged evaluation metrics such as accuracy, AUC-ROC, and misclassification rates to select the best-performing model, achieving significant improvements in diagnostic accuracy and transparency. This work highlights the potential of data-driven tools in early cancer detection and patient outcomes.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+            </section> <!-- Close the 'posts' section -->
+
+        </div> <!-- Close the 'main' div -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <!-- Contact Form -->
+                <form id="contact-form">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><button type="submit">Send Message</button></li>
+                    </ul>
+                </form>
+            </section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>96 Colton Pl<br />
+                    Longmeadow, MA 01106</p>
+                </section>
+                <section>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+14104533286">(410) 453-3286</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:nicholas.savignano@uconn.edu">nicholas.savignano@uconn.edu</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.kaggle.com/nicksav12345" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/nicholas-savignano-745896118" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/theNewNick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- JavaScript to handle the form submission -->
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the values from the form fields
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var message = document.getElementById('message').value.trim();
+
+                // Validate the inputs (optional but recommended)
+                if (name === '' || email === '' || message === '') {
+                    alert('Please fill out all fields.');
+                    return;
+                }
+
+                // Construct the mailto link
+                var subject = encodeURIComponent('New message from ' + name);
+                var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+                // Create the mailto link
+                var mailtoLink = 'mailto:nicholas.savignano@uconn.edu' +
+                                 '?subject=' + subject +
+                                 '&body=' + body;
+
+                // Open the user's email client with the pre-filled message
+                window.location.href = mailtoLink;
+            });
+        </script>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
